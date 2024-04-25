@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'category',
     'accounts',
     'store',
+    'carts',
     
 ]
 
@@ -52,6 +53,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    
 ]
 
 ROOT_URLCONF = 'ecommerce.urls'
@@ -68,6 +70,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'category.context_processors.menu_links',
+                'carts.context_processors.counter',
             ],
         },
     },
